@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:watchlist/constants/Themes.dart';
 import 'package:watchlist/pages/HomePage.dart';
+import 'package:watchlist/pages/Orders.dart';
 import 'package:watchlist/providers/market_provider.dart';
 import 'package:watchlist/providers/theme_provider.dart';
+
+import 'pages/MainPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +33,7 @@ class MyApp extends StatelessWidget {
             themeMode: themeProvider.themeMode,
             theme: lightTheme,
             darkTheme: darkTheme,
-            home: HomePage(),
+            home: MainPage(),
           );
         },
       ),

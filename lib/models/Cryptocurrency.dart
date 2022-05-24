@@ -13,6 +13,7 @@ class CryptoCurrency {
   double? circulatingSupply;
   double? ath;
   double? atl;
+  bool isFavorite = false;
 
   CryptoCurrency(
       {required this.id,
